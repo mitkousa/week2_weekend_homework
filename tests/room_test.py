@@ -22,5 +22,5 @@ class TestRoom(unittest.TestCase):
         self.guest2 = Guest("Queen Elizabeth")
         self.guest3 = Guest("President Obama")
 
-        def test_room_has_name(self):
-            self.assertEqual("Rock", self.room.name)
+        def test_room_has_genre(self):
+            self.assertEqual("Rock", self.room.genre)
