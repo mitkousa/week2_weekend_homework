@@ -7,9 +7,9 @@ class TestRoom(unittest.TestCase):
     
     def setUp(self):
 
-        self.room1 = Room("Hip-Hop", "10")
-        self.room2 = Room("Rock", "15")
-        self.room3 = Room("Pop", "20")
+        self.room1 = Room("Hip-Hop", 10)
+        self.room2 = Room("Rock", 15)
+        self.room3 = Room("Pop", 20)
 
         self.song1 = Song("In da club", "50 Cent")
         self.song2 = Song("Ms Jackson", "OutKast")
@@ -27,6 +27,9 @@ class TestRoom(unittest.TestCase):
 
     def test_room_has_genre(self):
         self.assertEqual("Rock", self.room2.genre)
+
+    def test_room_has_capacity(self):
+        self.assertEqual(20, self.room3.capacity)
 
     def test_room_guest_unique_origin(self):
         self.room1.check_in_guest(self.guest5)
