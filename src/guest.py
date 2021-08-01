@@ -4,3 +4,4 @@ class Guest:
         self.name = name
         self.age = age
         self.origin = origin
+        self.favorite_song = []
